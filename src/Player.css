@@ -1,17 +1,28 @@
+.Div {
+  border: 2px solid lightgrey;
+  border-radius: 40px;
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
 .Player {
   font-size: 40px;
 }
 
 .Down {
-width: 120px;
-color: white;
-font-size: 30px;
-background-color: palevioletred;
-padding: 10px;
-border: 1px solid black;
+  width: 120px;
+  color: white;
+  font-size: 30px;
+  background-color: palevioletred;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin-bottom: 50px;
 }
 
-.Num{
+.Num {
   color: grey;
   font-size: 100px;
 }
@@ -22,5 +33,6 @@ border: 1px solid black;
   font-size: 30px;
   background-color: lightgreen;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid lightgray;
+  border-radius: 8px;
 }

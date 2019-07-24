@@ -29,7 +29,7 @@ class App extends Component {
 
   render() {
     return (
-      <div style={{ textAlign: 'center' }}>
+      <div>
         <Player
           playerNo="1"
           number={this.state.player1}

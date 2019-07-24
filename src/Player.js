@@ -3,8 +3,7 @@ import './Player.css';
 
 const player = props => {
   return (
-    <div>
-      <hr />
+    <div className="Div">
       <p className="Player">Player {props.playerNo}</p>
       <button className="Down" onClick={props.down}>
         Down
