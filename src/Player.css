@@ -1,0 +1,26 @@
+.Player {
+  font-size: 40px;
+}
+
+.Down {
+width: 120px;
+color: white;
+font-size: 30px;
+background-color: palevioletred;
+padding: 10px;
+border: 1px solid black;
+}
+
+.Num{
+  color: grey;
+  font-size: 100px;
+}
+
+.Up {
+  width: 120px;
+  color: white;
+  font-size: 30px;
+  background-color: lightgreen;
+  padding: 10px;
+  border: 1px solid black;
+}

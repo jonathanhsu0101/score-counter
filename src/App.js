@@ -1,26 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Player from './Player';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    player1: 0,
+    player2: 0
+  };
+
+  player1up = () => {
+    this.setState({ player1: this.state.player1 + 1 });
+  };
+
+  player1down = () => {
+    if (this.state.player1 > 0) {
+      this.setState({ player1: this.state.player1 - 1 });
+    }
+  };
+
+  player2up = () => {
+    this.setState({ player2: this.state.player2 + 1 });
+  };
+
+  player2down = () => {
+    if (this.state.player2 > 0) {
+      this.setState({ player2: this.state.player2 - 1 });
+    }
+  };
+
+  render() {
+    return (
+      <div style={{ textAlign: 'center' }}>
+        <Player
+          playerNo="1"
+          number={this.state.player1}
+          up={this.player1up}
+          down={this.player1down}
+        />
+        <Player
+          playerNo="2"
+          number={this.state.player2}
+          up={this.player2up}
+          down={this.player2down}
+        />
+      </div>
+    );
+  }
 }
 
 export default App;
